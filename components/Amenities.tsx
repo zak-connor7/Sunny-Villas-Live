@@ -48,7 +48,7 @@ export default function Amenities() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="font-display text-[36px] md:text-[50px] leading-[1.05] text-white uppercase mb-2">
-            Everything You Need. Nothing You Don&apos;t.
+            Everything You Need, At All Times.
           </h2>
           <p className="text-[14px] text-rust italic">Every villa. Every stay.</p>
         </motion.div>

@@ -141,7 +141,7 @@ export default function Reviews() {
                   ))}
                 </div>
                 <span className="font-display text-4xl text-navy">9.1</span>
-                <span className="text-[12px] font-semibold text-muted">Booking.com</span>
+                <span className="text-[12px] font-semibold text-muted">Rated</span>
               </motion.div>
             </div>
           </div>

@@ -38,6 +38,7 @@ const retreatTypes = [
 function RetreatStep({ retreat, index }: { retreat: typeof retreatTypes[0]; index: number }) {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
+  const isReversed = index % 2 !== 0
 
   return (
     <div
@@ -59,9 +60,9 @@ function RetreatStep({ retreat, index }: { retreat: typeof retreatTypes[0]; inde
 
       {/* Single image */}
       <motion.div
-        className="relative overflow-hidden rounded z-10"
+        className={`relative overflow-hidden rounded z-10 ${isReversed ? 'md:order-2' : ''}`}
         style={{ aspectRatio: '16/10' }}
-        initial={{ opacity: 0, x: -24 }}
+        initial={{ opacity: 0, x: isReversed ? 24 : -24 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.85 }}
       >
@@ -70,7 +71,7 @@ function RetreatStep({ retreat, index }: { retreat: typeof retreatTypes[0]; inde
 
       {/* Text */}
       <motion.div
-        className="relative z-10"
+        className={`relative z-10 ${isReversed ? 'md:order-1' : ''}`}
         initial={{ opacity: 0, y: 24 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.85, delay: 0.15 }}

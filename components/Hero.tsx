@@ -63,15 +63,6 @@ export default function Hero() {
             </div>
             </motion.div>
 
-            {/* Location badge — clearly separated from CTAs above */}
-            <motion.p
-              className="mt-16 md:mt-auto pb-6 md:pb-10 text-[10px] tracking-[0.2em] uppercase text-muted font-medium"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.7 }}
-            >
-              Kassandra Peninsula · Halkidiki · Greece
-            </motion.p>
           </div>
 
           {/* Right: pill image */}

@@ -23,8 +23,8 @@ function SectionDivider({ label }: { label: string }) {
 export { SectionDivider }
 
 const stats = [
-  { value: '9.1', label: 'Booking.com Score' },
-  { value: '#2', label: 'In Hanioti — TripAdvisor' },
+  { value: '9.1', label: 'Rated on Booking.com' },
+  { value: '#2', label: 'On TripAdvisor, Hanioti' },
   { value: '52+', label: 'Guest Reviews' },
   { value: '35+', label: 'Years in Business' },
 ]

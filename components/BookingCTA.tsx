@@ -20,7 +20,7 @@ export default function BookingCTA() {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            'url(https://cdn.web-dynamic.gr/sunnyvillas/images/menu-slider/Menu-slider-1.jpg)',
+            'url(https://www.sunnyvillashalkidiki.com/images/grande-villa-header-01.jpg)',
         }}
       />
       <div className="absolute inset-0 bg-navy/55" />

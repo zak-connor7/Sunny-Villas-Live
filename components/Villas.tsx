@@ -133,7 +133,7 @@ export default function Villas() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="villas" className="bg-cream pt-4 pb-0">
+    <section id="villas" className="bg-cream pt-20 lg:pt-28 pb-0">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12" ref={ref}>
         <SectionDivider label="The Villas" />
 
@@ -162,16 +162,6 @@ export default function Villas() {
           ))}
         </div>
 
-        <div className="mt-10 text-center">
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex text-[11px] tracking-[0.14em] font-semibold text-white uppercase px-8 py-3.5 bg-rust hover:bg-rust/90 transition-colors"
-          >
-            → Book Your Villa
-          </a>
-        </div>
       </div>
 
       {/* Marquee ticker */}
