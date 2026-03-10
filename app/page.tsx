@@ -2,7 +2,6 @@ import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Villas from '@/components/Villas'
-import Quote from '@/components/Quote'
 import Amenities from '@/components/Amenities'
 import Reviews from '@/components/Reviews'
 import Retreats from '@/components/Retreats'
@@ -16,8 +15,7 @@ export default function Home() {
       <Hero />
       <About />
       <Villas />
-      <Quote />
-      <Amenities />
+<Amenities />
       <Reviews />
       <Retreats />
       <BookingCTA />

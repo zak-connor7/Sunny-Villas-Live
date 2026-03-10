@@ -18,7 +18,7 @@ const villas = [
     feature: 'Private pool · Whirlpool en-suite · Sea views · Fireplace',
     description:
       'Three bedrooms, two bathrooms, a fireplace, and a private heated pool on the terrace. The master suite has a whirlpool bath. The living room opens to a veranda looking out over the garden and the bay.',
-    image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=640&q=80',
+    image: 'https://www.sunnyvillashalkidiki.com/images/grande-villa-header-01.jpg',
   },
   {
     name: 'Two Bedroom Villa',
@@ -29,7 +29,7 @@ const villas = [
     feature: 'Private pool · Loft bedroom · Hydro-jet shower · Garden views',
     description:
       'Two bedrooms across two levels — a master on the ground floor and a loft above. The shower has hydro jets and a rain head. A private pool sits just off the veranda, with garden and sea views.',
-    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=640&q=80',
+    image: 'https://www.sunnyvillashalkidiki.com/images/header-tow-bedroom-villa-01.jpg',
   },
   {
     name: 'Spa Villa',
@@ -40,7 +40,7 @@ const villas = [
     feature: 'Private pool · Private sauna · Whirlpool loft · Sea views',
     description:
       'One master bedroom, and above it: a private spa loft with a sauna and whirlpool for two. A heated pool sits on the terrace with views straight out over the bay.',
-    image: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=640&q=80',
+    image: 'https://cdn.web-dynamic.gr/sunnyvillas/images/header-spa-villa-new.jpg',
   },
   {
     name: 'Exclusive Villa',
@@ -51,7 +51,7 @@ const villas = [
     feature: 'Private pool · Largest floor plan · Bathtubs & rain showers · 49″ TV',
     description:
       'The largest villas in the complex. A 4-bedroom and two 3-bedroom configurations, each with a heated private pool, bathtubs, and a 49″ TV in the living room. The right choice for a large family or a group that wants space.',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=640&q=80',
+    image: 'https://www.sunnyvillashalkidiki.com/images/exclusive-villa-header.jpg',
   },
 ]
 
@@ -177,13 +177,12 @@ export default function Villas() {
       {/* Marquee ticker */}
       <div className="mt-16 py-8 overflow-hidden border-y border-border bg-white">
         <div
-          className="flex whitespace-nowrap"
-          style={{ animation: 'marquee 28s linear infinite' }}
+          className="flex whitespace-nowrap animate-marquee"
         >
           {marqueeItems.map((item, i) => (
             <span
               key={i}
-              className="font-display text-[52px] md:text-[68px] text-navy leading-none px-8 shrink-0 flex items-center gap-8"
+              className="font-display text-[40px] md:text-[60px] text-navy leading-none px-6 shrink-0 flex items-center gap-6"
             >
               {item}
               <span className="text-rust text-[36px] md:text-[50px] mx-2">☀</span>

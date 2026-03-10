@@ -20,7 +20,7 @@ export default function BookingCTA() {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            'url(https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=1400&q=85)',
+            'url(https://cdn.web-dynamic.gr/sunnyvillas/images/menu-slider/Menu-slider-1.jpg)',
         }}
       />
       <div className="absolute inset-0 bg-navy/55" />

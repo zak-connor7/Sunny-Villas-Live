@@ -10,46 +10,28 @@ const retreatTypes = [
     step: '01',
     heading: 'Corporate Retreats',
     body: 'Offsites, strategy sessions, and leadership retreats. Space to think away from the office, with a team that handles all the logistics — rooms, meals, transfers, and activities — so you can focus on the people and the work.',
-    images: [
-      {
-        src: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=540&q=80',
-        alt: 'Corporate retreat workshop',
-      },
-      {
-        src: 'https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=540&q=80',
-        alt: 'Outdoor meeting on terrace',
-      },
-    ],
+    image: {
+      src: 'https://www.sunnyvillashalkidiki.com/images/SunnyVillas-Chalkidiki-Services-horizontal.jpg',
+      alt: 'Sunny Villas — services and resort grounds, Halkidiki',
+    },
   },
   {
     step: '02',
     heading: 'Wellness Retreats',
     body: 'Yoga, meditation, spa treatments, and sea air. The complex has the space, the on-site spa, and the quiet to support a proper wellness programme. We can arrange instructors, therapists, and tailored meal options.',
-    images: [
-      {
-        src: 'https://images.unsplash.com/photo-1588286840104-8957b019727f?w=540&q=80',
-        alt: 'Yoga session on terrace overlooking the sea',
-      },
-      {
-        src: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=540&q=80',
-        alt: 'Spa and wellness treatment',
-      },
-    ],
+    image: {
+      src: 'https://cdn.web-dynamic.gr/sunnyvillas/images/homepage-spa.jpg',
+      alt: 'Sunny Villas Spa — on-site spa facility, Halkidiki',
+    },
   },
   {
     step: '03',
     heading: 'Group Celebrations',
     body: 'Milestone birthdays, anniversaries, hen parties, and multi-family getaways. The full complex — the pools, the grounds, the terrace, the spa — is yours exclusively. We handle the catering, transfers, and any excursions you want to arrange.',
-    images: [
-      {
-        src: 'https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=540&q=80',
-        alt: 'Celebration group dining',
-      },
-      {
-        src: 'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=540&q=80',
-        alt: 'Evening pool scene for group celebrations',
-      },
-    ],
+    image: {
+      src: 'https://cdn.web-dynamic.gr/sunnyvillas/images/welcome-slider/03.jpg',
+      alt: 'Sunny Villas — resort grounds and pool for group celebrations',
+    },
   },
 ]
 
@@ -60,7 +42,7 @@ function RetreatStep({ retreat, index }: { retreat: typeof retreatTypes[0]; inde
   return (
     <div
       ref={ref}
-      className="relative grid md:grid-cols-2 gap-10 lg:gap-20 items-start py-16 border-b border-border last:border-0"
+      className="relative grid md:grid-cols-2 gap-10 lg:gap-20 items-center py-16 border-b border-border last:border-0"
     >
       {/* Watermark step number */}
       <div
@@ -75,27 +57,20 @@ function RetreatStep({ retreat, index }: { retreat: typeof retreatTypes[0]; inde
         </span>
       </div>
 
-      {/* Images */}
+      {/* Single image */}
       <motion.div
-        className="flex flex-col gap-4 relative z-10"
+        className="relative overflow-hidden rounded z-10"
+        style={{ aspectRatio: '16/10' }}
         initial={{ opacity: 0, x: -24 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.85 }}
       >
-        {retreat.images.map((img, i) => (
-          <div
-            key={i}
-            className="relative overflow-hidden rounded"
-            style={{ aspectRatio: '4/3' }}
-          >
-            <Image src={img.src} alt={img.alt} fill className="object-cover" />
-          </div>
-        ))}
+        <Image src={retreat.image.src} alt={retreat.image.alt} fill className="object-cover" />
       </motion.div>
 
       {/* Text */}
       <motion.div
-        className="relative z-10 md:pt-12"
+        className="relative z-10"
         initial={{ opacity: 0, y: 24 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.85, delay: 0.15 }}

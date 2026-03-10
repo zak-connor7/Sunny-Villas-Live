@@ -9,17 +9,15 @@ export default function Hero() {
   return (
     <section id="hero" className="pt-[72px] bg-cream overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div
-          className="flex flex-col md:flex-row md:items-start gap-8 pt-8 pb-0"
-          style={{ minHeight: 'calc(100vh - 100px)' }}
-        >
+        <div className="flex flex-col md:flex-row md:items-start gap-8 pt-6 md:pt-8 pb-0 min-h-[calc(100svh-72px)]">
+
           {/* Left: brand name + copy */}
-          <motion.div
-            className="flex-1 min-w-0 flex flex-col justify-between"
-            initial={{ opacity: 0, y: 28 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.95, ease: [0.25, 0.46, 0.45, 0.94] }}
-          >
+          <div className="flex-1 min-w-0 flex flex-col">
+            <motion.div
+              initial={{ opacity: 0, y: 28 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.95, ease: [0.25, 0.46, 0.45, 0.94] }}
+            >
             <div>
               <h1
                 className="font-display leading-[0.88] text-navy select-none"
@@ -63,25 +61,26 @@ export default function Hero() {
                 </a>
               </motion.div>
             </div>
+            </motion.div>
 
-            {/* Location badge — bottom of left column */}
+            {/* Location badge — clearly separated from CTAs above */}
             <motion.p
-              className="mt-12 md:mt-0 text-[10px] tracking-[0.2em] uppercase text-muted font-medium"
+              className="mt-16 md:mt-auto pb-6 md:pb-10 text-[10px] tracking-[0.2em] uppercase text-muted font-medium"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.7 }}
             >
               Kassandra Peninsula · Halkidiki · Greece
             </motion.p>
-          </motion.div>
+          </div>
 
           {/* Right: pill image */}
-          <div className="flex flex-col items-end gap-4 pt-2 shrink-0">
+          <div className="flex justify-center md:justify-end pt-2 shrink-0">
             <motion.div
               className="relative overflow-hidden"
               style={{
                 borderRadius: '9999px',
-                width: 'clamp(220px, 46vw, 380px)',
+                width: 'clamp(160px, 38vw, 360px)',
                 aspectRatio: '2/3',
               }}
               initial={{ opacity: 0, y: 24 }}
@@ -89,8 +88,8 @@ export default function Hero() {
               transition={{ duration: 1.05, delay: 0.18, ease: [0.25, 0.46, 0.45, 0.94] }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800&q=85"
-                alt="Sunny Villas — private pool with sea view, Halkidiki"
+                src="https://cdn.web-dynamic.gr/sunnyvillas/images/welcome-slider/01.jpg"
+                alt="Sunny Villas — private pool with sea view over Toroneos Bay, Halkidiki"
                 fill
                 className="object-cover"
                 priority

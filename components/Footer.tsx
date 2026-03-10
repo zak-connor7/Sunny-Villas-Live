@@ -1,7 +1,5 @@
 'use client'
 
-import Image from 'next/image'
-
 const BOOKING_URL = 'https://sunnyvillasresortandspa.reserve-online.net/'
 
 const footerLinks = [
@@ -11,33 +9,9 @@ const footerLinks = [
   { label: 'Contact', href: '#contact' },
 ]
 
-const galleryImages = [
-  {
-    src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=500&q=80',
-    alt: 'Sunny Villas — interior',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=500&q=80',
-    alt: 'Sunny Villas — villa complex exterior',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=500&q=80',
-    alt: 'Sunny Villas — pool with sea view',
-  },
-]
-
 export default function Footer() {
   return (
     <>
-      {/* Pre-footer gallery strip */}
-      <div className="grid grid-cols-3 gap-1 bg-white">
-        {galleryImages.map((img, i) => (
-          <div key={i} className="relative overflow-hidden" style={{ aspectRatio: '4/3' }}>
-            <Image src={img.src} alt={img.alt} fill className="object-cover" />
-          </div>
-        ))}
-      </div>
-
       {/* Main footer */}
       <footer id="contact" className="bg-navy pt-16 pb-0 overflow-hidden">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 pb-12">

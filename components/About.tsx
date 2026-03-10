@@ -23,10 +23,10 @@ function SectionDivider({ label }: { label: string }) {
 export { SectionDivider }
 
 const stats = [
-  { value: '1988', label: 'Since' },
-  { value: '11', label: 'Private Villas' },
-  { value: '4', label: 'Villa Types' },
-  { value: '60–70%', label: 'Direct Bookings' },
+  { value: '9.1', label: 'Booking.com Score' },
+  { value: '#2', label: 'In Hanioti — TripAdvisor' },
+  { value: '52+', label: 'Guest Reviews' },
+  { value: '35+', label: 'Years in Business' },
 ]
 
 export default function About() {
@@ -82,7 +82,7 @@ export default function About() {
 
           {/* Right: pill image */}
           <motion.div
-            className="flex justify-end"
+            className="flex justify-center lg:justify-end"
             initial={{ opacity: 0, y: 28 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.95, delay: 0.15 }}
@@ -92,8 +92,8 @@ export default function About() {
               style={{ borderRadius: '9999px', aspectRatio: '3/4' }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80"
-                alt="Sunny Villas — hilltop villa complex overlooking Toroneos Bay"
+                src="https://cdn.web-dynamic.gr/sunnyvillas/images/welcome-slider/02.jpg"
+                alt="Sunny Villas — hilltop villa complex overlooking Toroneos Bay, Halkidiki"
                 fill
                 className="object-cover"
               />

@@ -6,52 +6,52 @@ import { SectionDivider } from './About'
 
 const reviews = [
   {
-    name: 'M.B.',
-    platform: 'G',
-    country: 'United Kingdom',
-    date: '2024',
-    quote:
-      'The Spa Villa was perfect for us as a couple. The sauna and whirlpool in the loft were a genuine highlight — not something you\'d expect at this price point. The views from the pool are something else. We\'ll be back.',
-  },
-  {
-    name: 'F.H.',
-    platform: 'B',
-    country: 'Germany',
-    date: '2024',
-    quote:
-      'We had the Grande Villa with our family of six. Every morning the room service arrived, the pool was cleaned, and we had nothing to worry about. The beach shuttle made getting to Hanioti completely easy. Outstanding.',
-  },
-  {
-    name: 'K.V.',
+    name: 'Guest',
     platform: 'T',
-    country: 'Netherlands',
-    date: '2023',
-    quote:
-      'The complex is beautifully maintained. The villas themselves are spacious and well-equipped, and the location — high up on the hill with the bay in front of you — is genuinely hard to beat. The concierge arranged our yacht day and it was the highlight of the trip.',
-  },
-  {
-    name: 'D.L.',
-    platform: 'G',
-    country: 'United Kingdom',
-    date: '2023',
-    quote:
-      'Stayed for two weeks in the Two Bedroom Villa. The combination of privacy and service is rare. You feel like you have your own property, but everything is taken care of. Exactly what we were looking for.',
-  },
-  {
-    name: 'R.K.',
-    platform: 'B',
-    country: 'Netherlands',
+    country: 'Verified Stay',
     date: '2024',
     quote:
-      'Beautiful villas in an excellent location. The team is warm, attentive and genuinely helpful without being intrusive. The pool was always spotless. The best villa experience we\'ve had in Greece.',
+      'My family and I stayed at Sunny Villas for 12 nights. It was one of the best summer experiences that we had. The villa had everything we needed and the views over the bay were extraordinary.',
   },
   {
-    name: 'C.W.',
+    name: 'Guest',
+    platform: 'B',
+    country: 'Verified Stay',
+    date: '2024',
+    quote:
+      'Everything was perfect. The villas are really great and have everything needed. Quite spacious and everything is clean and well maintained. The view from them is amazing.',
+  },
+  {
+    name: 'Guest',
     platform: 'G',
-    country: 'United Kingdom',
+    country: 'Verified Stay',
+    date: '2024',
+    quote:
+      'Beautiful villa! Unrealistic view! Super clean! Very friendly staff! One of the best experiences we have had in Greece. We will definitely be returning.',
+  },
+  {
+    name: 'Guest',
+    platform: 'T',
+    country: 'Verified Stay',
     date: '2023',
     quote:
-      'Arrived to a beautiful welcome basket in the villa. The views from our terrace were exactly as advertised — if anything, better in person. The diving day arranged by the concierge was a highlight. Cannot recommend enough.',
+      'Elena and her team did an amazing job — arranging food deliveries, organising a personal boat trip and even giving us a lift to the local supermarket. Nothing was too much trouble.',
+  },
+  {
+    name: 'Guest',
+    platform: 'B',
+    country: 'Verified Stay',
+    date: '2024',
+    quote:
+      'The house really had everything. We stayed 2 weeks and it was the best 2 weeks we could dream of. The house and the pool was so nice. The owner gave excellent service.',
+  },
+  {
+    name: 'Guest',
+    platform: 'G',
+    country: 'Verified Stay',
+    date: '2023',
+    quote:
+      'The owners are just so helpful and could not do enough for us. The villas are well-furnished and the views are spectacular. We have already recommended Sunny Villas to friends and family.',
   },
 ]
 
@@ -126,7 +126,7 @@ export default function Reviews() {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8 }}
               >
-                Over 35 Years of Getting It Right.
+                What Our Guests Say.
               </motion.h2>
 
               <motion.div
@@ -140,15 +140,15 @@ export default function Reviews() {
                     <div key={i} className="w-4 h-4 rounded-full bg-rust/80" />
                   ))}
                 </div>
-                <span className="font-display text-4xl text-navy">4.9</span>
-                <span className="text-[12px] font-semibold text-muted">Excellent</span>
+                <span className="font-display text-4xl text-navy">9.1</span>
+                <span className="text-[12px] font-semibold text-muted">Booking.com</span>
               </motion.div>
             </div>
           </div>
         </div>
 
         {/* Review cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {reviews.map((review, i) => (
             <ReviewCard key={review.name + i} review={review} index={i} />
           ))}
