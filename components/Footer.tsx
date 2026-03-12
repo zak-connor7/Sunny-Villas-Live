@@ -1,12 +1,14 @@
 'use client'
 
 const BOOKING_URL = 'https://sunnyvillasresortandspa.reserve-online.net/'
+const CHECKIN_URL = 'https://form.jotform.com/201057247858864'
 
 const footerLinks = [
-  { label: 'Villas', href: '#villas' },
-  { label: 'Amenities', href: '#amenities' },
-  { label: 'Retreats', href: '#retreats' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Villas', href: '/#villas' },
+  { label: 'Experiences', href: '/experiences' },
+  { label: 'Amenities', href: '/#amenities' },
+  { label: 'Retreats', href: '/#retreats' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 export default function Footer() {
@@ -38,7 +40,7 @@ export default function Footer() {
                 <p>Hanioti, Kassandra, 630 85, Greece</p>
               </div>
               <p className="text-[11px] text-white/20 mt-8">
-                © 2025 Sunny Villas Resort &amp; Spa. All rights reserved.
+                &copy; 2025 Sunny Villas Resort &amp; Spa. All rights reserved.
               </p>
             </div>
 
@@ -97,6 +99,16 @@ export default function Footer() {
                       className="text-[13px] text-white/40 hover:text-white transition-colors"
                     >
                       Retreat Enquiry
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={CHECKIN_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[13px] text-white/40 hover:text-white transition-colors"
+                    >
+                      Online Check-In
                     </a>
                   </li>
                 </ul>

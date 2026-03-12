@@ -6,20 +6,20 @@ import { motion, useInView } from 'framer-motion'
 
 const galleryImages = [
   {
-    src: 'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=480&q=80',
-    alt: 'Infinity pool at sunset, Halkidiki',
+    src: '/images/welcome-slider-01.webp',
+    alt: 'Sunny Villas — private pool with sea view, Halkidiki',
   },
   {
-    src: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=480&q=80',
-    alt: 'Spa and wellness interior',
+    src: '/images/homepage-spa.webp',
+    alt: 'Sunny Villas — on-site spa and wellness',
   },
   {
-    src: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=480&q=80',
-    alt: 'Villa terrace and garden',
+    src: '/images/grande-villa-description-block.jpg',
+    alt: 'Sunny Villas — Grande Villa interior',
   },
   {
-    src: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=480&q=80',
-    alt: 'Private pool with sea view',
+    src: '/images/welcome-slider-03.webp',
+    alt: 'Sunny Villas — resort grounds and pool',
   },
 ]
 

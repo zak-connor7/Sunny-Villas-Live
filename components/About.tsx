@@ -92,7 +92,7 @@ export default function About() {
               style={{ borderRadius: '9999px', aspectRatio: '3/4' }}
             >
               <Image
-                src="https://cdn.web-dynamic.gr/sunnyvillas/images/welcome-slider/02.jpg"
+                src="/images/welcome-slider-02.webp"
                 alt="Sunny Villas — hilltop villa complex overlooking Toroneos Bay, Halkidiki"
                 fill
                 className="object-cover"

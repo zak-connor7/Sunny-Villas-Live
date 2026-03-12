@@ -18,7 +18,7 @@ const villas = [
     feature: 'Private pool · Whirlpool en-suite · Sea views · Fireplace',
     description:
       'Three bedrooms, two bathrooms, a fireplace, and a private heated pool on the terrace. The master suite has a whirlpool bath. The living room opens to a veranda looking out over the garden and the bay.',
-    image: 'https://www.sunnyvillashalkidiki.com/images/grande-villa-header-01.jpg',
+    image: '/images/villa-grande.webp',
   },
   {
     name: 'Two Bedroom Villa',
@@ -29,7 +29,7 @@ const villas = [
     feature: 'Private pool · Loft bedroom · Hydro-jet shower · Garden views',
     description:
       'Two bedrooms across two levels — a master on the ground floor and a loft above. The shower has hydro jets and a rain head. A private pool sits just off the veranda, with garden and sea views.',
-    image: 'https://www.sunnyvillashalkidiki.com/images/header-tow-bedroom-villa-01.jpg',
+    image: '/images/two-bedroom-villa.webp',
   },
   {
     name: 'Spa Villa',
@@ -40,7 +40,7 @@ const villas = [
     feature: 'Private pool · Private sauna · Whirlpool loft · Sea views',
     description:
       'One master bedroom, and above it: a private spa loft with a sauna and whirlpool for two. A heated pool sits on the terrace with views straight out over the bay.',
-    image: 'https://cdn.web-dynamic.gr/sunnyvillas/images/header-spa-villa-new.jpg',
+    image: '/images/spa-homepage.webp',
   },
   {
     name: 'Exclusive Villa',
@@ -51,7 +51,7 @@ const villas = [
     feature: 'Private pool · Largest floor plan · Bathtubs & rain showers · 49″ TV',
     description:
       'The largest villas in the complex. A 4-bedroom and two 3-bedroom configurations, each with a heated private pool, bathtubs, and a 49″ TV in the living room. The right choice for a large family or a group that wants space.',
-    image: 'https://www.sunnyvillashalkidiki.com/images/exclusive-villa-header.jpg',
+    image: '/images/exclusive-villa.webp',
   },
 ]
 

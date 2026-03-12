@@ -2,9 +2,7 @@
 const nextConfig = {
   images: {
     remotePatterns: [
-      { protocol: 'https', hostname: 'images.unsplash.com' },
       { protocol: 'https', hostname: 'www.sunnyvillashalkidiki.com' },
-      { protocol: 'https', hostname: 'cdn.web-dynamic.gr' },
     ],
   },
 }

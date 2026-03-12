@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'Sunny Villas Resort & Spa',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1200&q=85',
+        url: 'https://www.sunnyvillashalkidiki.com/images/header-home.jpg',
         width: 1200,
         height: 630,
         alt: 'Sunny Villas — private pool with sea view, Halkidiki Greece',

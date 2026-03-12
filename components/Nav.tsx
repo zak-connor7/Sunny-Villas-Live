@@ -1,15 +1,18 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { Menu, X, CalendarDays } from 'lucide-react'
 
 const BOOKING_URL = 'https://sunnyvillasresortandspa.reserve-online.net/'
+const CHECKIN_URL = 'https://form.jotform.com/201057247858864'
 
 const navLinks = [
-  { label: 'Villas', href: '#villas' },
-  { label: 'Amenities', href: '#amenities' },
-  { label: 'Retreats', href: '#retreats' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Villas', href: '/#villas' },
+  { label: 'Experiences', href: '/experiences' },
+  { label: 'Amenities', href: '/#amenities' },
+  { label: 'Retreats', href: '/#retreats' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 export default function Nav() {
@@ -32,15 +35,24 @@ export default function Nav() {
           </button>
 
           {/* Centred brand */}
-          <a href="#" className="absolute left-1/2 -translate-x-1/2 text-center">
-            <span
-              className="font-display text-[13px] tracking-[0.28em] text-navy block leading-none"
-            >
-              SUNNY VILLAS
-            </span>
-            <span className="text-[9px] tracking-[0.18em] text-muted uppercase block mt-0.5">
-              Halkidiki, Greece
-            </span>
+          <a href="/" className="absolute left-1/2 -translate-x-1/2 flex items-center gap-3">
+            <Image
+              src="/images/logo.svg"
+              alt="Sunny Villas"
+              width={32}
+              height={32}
+              className="hidden sm:block"
+            />
+            <div className="text-center">
+              <span
+                className="font-display text-[13px] tracking-[0.28em] text-navy block leading-none"
+              >
+                SUNNY VILLAS
+              </span>
+              <span className="text-[9px] tracking-[0.18em] text-muted uppercase block mt-0.5">
+                Halkidiki, Greece
+              </span>
+            </div>
           </a>
 
           {/* Right: phone + CTA */}
@@ -89,14 +101,22 @@ export default function Nav() {
             ))}
           </nav>
 
-          <div className="mt-auto pt-16 flex flex-col gap-2">
+          <div className="mt-auto pt-16 flex flex-col gap-3">
             <a
               href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-rust text-[12px] tracking-[0.12em] font-semibold uppercase"
             >
-              → Book Now
+              Book Now
+            </a>
+            <a
+              href={CHECKIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/60 text-[12px] tracking-[0.12em] font-semibold uppercase hover:text-white transition-colors"
+            >
+              Online Check-In
             </a>
             <a href="tel:+306945796792" className="text-white/40 text-sm">
               +30 6945796792

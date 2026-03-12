@@ -20,7 +20,7 @@ const retreatTypes = [
     heading: 'Wellness Retreats',
     body: 'Yoga, meditation, spa treatments, and sea air. The complex has the space, the on-site spa, and the quiet to support a proper wellness programme. We can arrange instructors, therapists, and tailored meal options.',
     image: {
-      src: 'https://cdn.web-dynamic.gr/sunnyvillas/images/homepage-spa.jpg',
+      src: '/images/homepage-spa.webp',
       alt: 'Sunny Villas Spa — on-site spa facility, Halkidiki',
     },
   },
@@ -29,7 +29,7 @@ const retreatTypes = [
     heading: 'Group Celebrations',
     body: 'Milestone birthdays, anniversaries, hen parties, and multi-family getaways. The full complex — the pools, the grounds, the terrace, the spa — is yours exclusively. We handle the catering, transfers, and any excursions you want to arrange.',
     image: {
-      src: 'https://cdn.web-dynamic.gr/sunnyvillas/images/welcome-slider/03.jpg',
+      src: '/images/welcome-slider-03.webp',
       alt: 'Sunny Villas — resort grounds and pool for group celebrations',
     },
   },

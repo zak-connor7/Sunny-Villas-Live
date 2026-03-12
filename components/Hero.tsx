@@ -79,7 +79,7 @@ export default function Hero() {
               transition={{ duration: 1.05, delay: 0.18, ease: [0.25, 0.46, 0.45, 0.94] }}
             >
               <Image
-                src="https://cdn.web-dynamic.gr/sunnyvillas/images/welcome-slider/01.jpg"
+                src="/images/welcome-slider-01.webp"
                 alt="Sunny Villas — private pool with sea view over Toroneos Bay, Halkidiki"
                 fill
                 className="object-cover"
