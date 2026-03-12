@@ -80,24 +80,20 @@ export default function About() {
             </a>
           </motion.div>
 
-          {/* Right: pill image */}
+          {/* Right: full-height image */}
           <motion.div
-            className="flex justify-center lg:justify-end"
+            className="relative overflow-hidden w-full self-stretch min-h-[400px]"
+            style={{ borderRadius: 4 }}
             initial={{ opacity: 0, y: 28 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.95, delay: 0.15 }}
           >
-            <div
-              className="relative overflow-hidden w-full max-w-[380px]"
-              style={{ borderRadius: '9999px', aspectRatio: '3/4' }}
-            >
-              <Image
-                src="/images/welcome-slider-02.webp"
-                alt="Sunny Villas — hilltop villa complex overlooking Toroneos Bay, Halkidiki"
-                fill
-                className="object-cover"
-              />
-            </div>
+            <Image
+              src="/images/welcome-slider-02.webp"
+              alt="Sunny Villas — hilltop villa complex overlooking Toroneos Bay, Halkidiki"
+              fill
+              className="object-cover"
+            />
           </motion.div>
         </div>
       </div>

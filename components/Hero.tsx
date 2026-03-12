@@ -65,28 +65,22 @@ export default function Hero() {
 
           </div>
 
-          {/* Right: pill image */}
-          <div className="flex justify-center md:justify-end pt-2 shrink-0">
-            <motion.div
-              className="relative overflow-hidden"
-              style={{
-                borderRadius: '9999px',
-                width: 'clamp(160px, 38vw, 360px)',
-                aspectRatio: '2/3',
-              }}
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.05, delay: 0.18, ease: [0.25, 0.46, 0.45, 0.94] }}
-            >
-              <Image
-                src="/images/welcome-slider-01.webp"
-                alt="Sunny Villas — private pool with sea view over Toroneos Bay, Halkidiki"
-                fill
-                className="object-cover"
-                priority
-              />
-            </motion.div>
-          </div>
+          {/* Right: full-height image */}
+          <motion.div
+            className="relative overflow-hidden md:w-[45%] shrink-0 self-stretch min-h-[400px]"
+            style={{ borderRadius: 4 }}
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.05, delay: 0.18, ease: [0.25, 0.46, 0.45, 0.94] }}
+          >
+            <Image
+              src="/images/welcome-slider-01.webp"
+              alt="Sunny Villas — private pool with sea view over Toroneos Bay, Halkidiki"
+              fill
+              className="object-cover"
+              priority
+            />
+          </motion.div>
         </div>
       </div>
     </section>

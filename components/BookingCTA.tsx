@@ -26,7 +26,7 @@ export default function BookingCTA() {
       <div className="absolute inset-0 bg-navy/55" />
 
       {/* Card */}
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 flex justify-end">
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 flex justify-start">
         <motion.div
           className="bg-cream w-full max-w-lg p-8 md:p-10"
           initial={{ opacity: 0, y: 32 }}
