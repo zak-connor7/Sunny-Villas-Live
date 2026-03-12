@@ -24,18 +24,18 @@ export default function Nav() {
         className="fixed top-0 left-0 right-0 z-50 bg-cream"
         style={{ borderBottom: '1px solid #dcd5c9' }}
       >
-        <div className="relative flex items-center h-[72px] px-6 lg:px-12">
+        <div className="relative flex items-center h-[72px] px-4 sm:px-6 lg:px-12">
           {/* Hamburger */}
           <button
             onClick={() => setOpen(true)}
-            className="text-navy hover:opacity-60 transition-opacity"
+            className="text-navy hover:opacity-60 transition-opacity shrink-0"
             aria-label="Open menu"
           >
             <Menu size={20} strokeWidth={1.5} />
           </button>
 
           {/* Centred brand */}
-          <a href="/" className="absolute left-1/2 -translate-x-1/2 flex items-center gap-3">
+          <a href="/" className="absolute left-1/2 -translate-x-1/2 flex items-center gap-2 sm:gap-3">
             <Image
               src="/images/logo.svg"
               alt="Sunny Villas"
@@ -45,18 +45,18 @@ export default function Nav() {
             />
             <div className="text-center">
               <span
-                className="font-display text-[13px] tracking-[0.28em] text-navy block leading-none"
+                className="font-display text-[11px] sm:text-[13px] tracking-[0.2em] sm:tracking-[0.28em] text-navy block leading-none"
               >
                 SUNNY VILLAS
               </span>
-              <span className="text-[9px] tracking-[0.18em] text-muted uppercase block mt-0.5">
+              <span className="text-[8px] sm:text-[9px] tracking-[0.14em] sm:tracking-[0.18em] text-muted uppercase block mt-0.5">
                 Halkidiki, Greece
               </span>
             </div>
           </a>
 
           {/* Right: phone + CTA */}
-          <div className="ml-auto flex items-center gap-6">
+          <div className="ml-auto flex items-center gap-4 sm:gap-6 shrink-0">
             <a
               href="tel:+306945796792"
               className="hidden md:block text-[12px] text-muted hover:text-navy transition-colors"
@@ -67,10 +67,10 @@ export default function Nav() {
               href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-white text-[10px] tracking-[0.1em] font-semibold px-5 py-3 uppercase"
+              className="flex items-center gap-1.5 sm:gap-2 text-white text-[9px] sm:text-[10px] tracking-[0.1em] font-semibold px-3 sm:px-5 py-2.5 sm:py-3 uppercase whitespace-nowrap"
               style={{ background: '#b8674b' }}
             >
-              <CalendarDays size={12} />
+              <CalendarDays size={11} className="sm:w-3 sm:h-3" />
               Book Now
             </a>
           </div>
