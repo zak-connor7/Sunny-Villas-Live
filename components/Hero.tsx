@@ -9,7 +9,25 @@ export default function Hero() {
   return (
     <section id="hero" className="pt-[72px] bg-cream overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div className="flex flex-col md:flex-row md:items-start gap-8 pt-6 md:pt-8 pb-0 min-h-[calc(100svh-72px)]">
+
+        {/* Mobile: landscape image at top, full width */}
+        <motion.div
+          className="relative overflow-hidden w-full md:hidden mt-6"
+          style={{ borderRadius: 4, aspectRatio: '16/10' }}
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.05, delay: 0.18, ease: [0.25, 0.46, 0.45, 0.94] }}
+        >
+          <Image
+            src="/images/welcome-slider-01.webp"
+            alt="Sunny Villas — private pool with sea view over Toroneos Bay, Halkidiki"
+            fill
+            className="object-cover"
+            priority
+          />
+        </motion.div>
+
+        <div className="flex flex-col md:flex-row md:items-start gap-8 pt-6 md:pt-8 pb-8 md:pb-0 md:min-h-[calc(100svh-72px)]">
 
           {/* Left: brand name + copy */}
           <div className="flex-1 min-w-0 flex flex-col">
@@ -65,10 +83,10 @@ export default function Hero() {
 
           </div>
 
-          {/* Right: full-height image */}
+          {/* Desktop: square image on the right */}
           <motion.div
-            className="relative overflow-hidden md:w-[45%] shrink-0 self-stretch min-h-[400px]"
-            style={{ borderRadius: 4 }}
+            className="relative overflow-hidden hidden md:block md:w-[45%] shrink-0"
+            style={{ borderRadius: 4, aspectRatio: '1/1' }}
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.05, delay: 0.18, ease: [0.25, 0.46, 0.45, 0.94] }}
